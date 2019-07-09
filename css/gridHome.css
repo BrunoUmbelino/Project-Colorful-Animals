@@ -1,0 +1,45 @@
+
+.container {
+    width: 100%;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  auto 1fr 1fr auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "lateralContent"
+    "footer";
+}
+
+@media(min-width: 400px){
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 20%;
+        grid-template-rows:  auto 1fr auto;
+        grid-template-areas: 
+        "header header"
+        "main lateralContent"
+        "footer footer";
+    }
+}
+
+.header{
+    grid-area: header;
+}
+
+.main {
+   grid-area: main;
+   padding: 1em;
+}
+
+.lateralContent{
+    grid-area: lateralContent;
+    background-color: hsl(194, 65%, 75%);
+    padding: 1em;
+}
+
+.footer {
+    grid-area: footer;
+}

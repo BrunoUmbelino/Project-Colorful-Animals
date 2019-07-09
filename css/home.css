@@ -1,0 +1,56 @@
+.image-raccoon {
+    background-image: url(../img/image-raccoon.jpg);
+}
+
+.column {
+    float: left;
+    width: 33%;
+}
+
+.text::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rightcolumn {
+    width: 10%;
+    height: 100vh; 
+}
+
+.rightcolumn article{
+   
+    background-color: red;
+}
+
+.tooltip {
+   position: relative;
+   display: inline-block;
+}
+
+.tooltip .tooltipText {
+    position: absolute;
+    visibility: hidden;
+    background-color: rgb(183, 201, 152);
+    color: azure;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px;
+    z-index: 1;
+    bottom: 140%;
+    left: 1%;
+} 
+
+.tooltip .tooltipText::after{
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    top: 100%;
+    left: 45%;
+    border-color: darkolivegreen transparent transparent transparent;
+}
+
+.tooltip:hover .tooltipText {
+    visibility: visible;
+}

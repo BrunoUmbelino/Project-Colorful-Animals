@@ -1,0 +1,124 @@
+.image-ferret {
+    background-image: url(../img/image-ferret.jpg);
+}
+
+.image-theScream {
+    width: 8vw; 
+    height: 20vh;
+}
+
+p, cite {
+    color: firebrick;
+}
+
+.run {
+    letter-spacing: 2vw;
+    text-shadow: 3px 2px 5px green;
+}
+
+.beverage-lists {
+    width: 150vh;
+    margin: auto;
+}
+
+.beverage-lists .lista-ordenada {
+    list-style-type:upper-roman;
+    background-image: linear-gradient(hsl(16, 100%, 66%), yellow);
+    padding: 20px;
+}
+
+.beverage-lists .lista-ordenada li {
+    color: black;
+    background-color: hsl(25, 100%, 50%);
+    margin: 10px;
+}
+
+.beverage-lists .lista-ordenada:active {
+    transform: scale(1.1);
+}
+
+.beverage-lists .lista-desordenada {
+    list-style-type: armenian;
+    background-color: hsl(180, 100%, 30%);
+    padding: 25px;
+}
+
+.beverage-lists .lista-desordenada li {
+    background: linear-gradient(to right, hsl(240, 70%, 50%), hsl(0, 70%, 50%));
+    padding: 10px;
+    color: white;
+}
+
+.beverage-lists .lista-desordenada:active {
+    transform: scale(1.1);
+}
+
+.beverage-lists .lista-descritiva {
+    background: linear-gradient(to left, #d5f4e6, #86af49) ;
+    padding: 20px;
+}
+
+.beverage-lists .lista-descritiva dt{
+    background: linear-gradient(to left, #4040a1, hsl(24, 100%, 57%));
+    padding: 5px;
+}
+
+.beverage-lists .lista-descritiva dd {
+    background: linear-gradient(to left, #d5f4e6, hsl(84, 41%, 49%));
+    padding: 5px;
+}
+
+.beverage-lists .lista-descritiva:active {
+    transform: scale(1.1);
+}
+
+.beverage-lists .lista-desordenada-dentroDeLista {
+    background: linear-gradient(to top left, blue, orange);
+    padding: 20px;
+}
+
+.beverage-lists .lista-desordenada-dentroDeLista li{
+    background: linear-gradient(to top left, hsl(39, 80%, 50%), hsl(0, 80%, 50%));
+    padding: 10px;
+    margin: 10px;
+    color: black;
+}
+
+.beverage-lists .lista-desordenada-dentroDeLista:active{
+    transform: scale(1.1);
+}
+
+.linear-gradient{
+    margin: 2vmax 0px 2vmax 0px;
+    height: 7vw;
+    width: 100vw;
+    background: repeating-linear-gradient(45deg, 
+        red 0%,
+        black 35%,
+        blue 65%,
+        green 100%
+    );
+}
+
+.linear-gradient:active{
+    transform: skewX(40deg);
+}
+
+.repeating-linear-gradient{
+    margin: 2vmax 0px 2vmax 0px;
+    height: 4vw;
+    width: 100vw;
+    background: repeating-linear-gradient(45deg, 
+        red 0px,
+        black 40px,
+        white 40px,
+        blue 80px
+    )
+}
+
+.repeating-linear-gradient:active{
+    transform: rotate(10deg);
+}
+
+
+

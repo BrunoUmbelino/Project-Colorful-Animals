@@ -1,0 +1,57 @@
+.image-Hummingbird {
+    background-image: url(../img/image-hummingbird.jpg);
+}
+
+.box {
+    position: relative;
+    top: 60px;
+    border: 20px solid transparent; 
+    overflow: auto;
+    border-image: url(../img/background-border2.png) 30 repeat;
+}
+
+img {
+    width: 250px;
+    height: 150px;
+    float: left;
+}
+
+.fire-raposa {
+    position: absolute;
+    top: 60px;
+}
+
+.pai-box {
+    position: static;
+}
+
+.pi {
+    border: 2px solid #00d0d0;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: aquamarine;
+    font-size: 1.5em;
+    z-index: 1;
+    width: 15%;
+    text-align: center;
+}
+
+.pi-simbolo{
+    font-size: 2.5em;
+}
+
+.TwoBackground-image {
+    border: 2px solid black;
+    margin: 10px;
+    background-image: url(../img/background3.png), url(../img/background2.jpg), url(../img/background1.jpg);
+    background-size: 100px 100px, 100px 100px, auto;
+    background-position: left top, right top;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+.btn-position-page {
+    position: relative; 
+}

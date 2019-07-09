@@ -1,0 +1,119 @@
+.image-macaw {
+    background-image: url(../img/image-macaw.jpg);
+}
+
+table, th, td {
+    border-spacing: 2px;
+    text-align: center;
+}
+
+th {
+    height: 30px;
+    background-color: hsl(180, 100%, 41%);
+    color: black;
+    font: 1.2em bolder;
+}
+
+td, th {
+    padding: 8px;
+}
+
+caption {
+    margin-bottom: 1vh;
+}
+
+table {
+    width: 95%; 
+    border: 2px solid black;
+    margin-top:20px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table caption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4em;
+}
+
+tr:nth-child(even) {
+    background-color: hsl(180, 21%, 88%);
+}
+
+tr:hover {
+    background-color: hsl(160, 100%, 75%);
+}
+
+
+form {
+    margin: 10px;
+}
+
+
+.formulario {
+    margin: 10px;
+    padding: 20px;
+}
+
+.formulario input[type=text], input[type=date], input[type=email], textarea, select{
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 2px solid hsl(271, 40%, 53%);
+    border-radius: 4px;
+}
+
+.formulario input[type=text]:focus, input[type=date]:focus, input[type=email]:focus, textarea:focus, select:focus{
+    background-color: whitesmoke;
+}
+
+.formulario input[type=checkbox], input[type=radio], input[type=select]{
+    margin: 10px;
+    padding: 10px;
+    width: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+
+.formulario label, legend {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+.formulario input[type=submit], input[type=reset]  {
+    margin: 20px 0;
+    display: inline-block;
+    background-color: hsl(122, 80%, 30%);
+    color: white;
+    padding: 16px 32px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.formulario input[type=submit]:hover, input[type=reset]:hover  {
+    margin: 20px 0;
+    display: inline-block;
+    background-color: white;
+    color: hsl(122, 80%, 30%);
+    padding: 16px 32px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.formulario input, textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+
+.formulario textarea {
+    resize: none;
+}
+
+
+.formulario .radioOption{
+    display: inline;
+}
