@@ -2,9 +2,10 @@
     background-image: url(../img/image-raccoon.jpg);
 }
 
-.column {
-    float: left;
-    width: 33%;
+.text {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: auto;
 }
 
 .text::after {
@@ -16,11 +17,6 @@
 .rightcolumn {
     width: 10%;
     height: 100vh; 
-}
-
-.rightcolumn article{
-   
-    background-color: red;
 }
 
 .tooltip {

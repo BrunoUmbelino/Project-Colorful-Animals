@@ -6,22 +6,8 @@
     "header"
     "main"
     "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-}
-
-@media(min-height: 800px){
-    .container {
-        width: 100%;
-        min-height: 300px;
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-    }
+    grid-template-columns: minmax(300px, 1ft);
+    grid-template-rows: auto minmax(100vh, auto) auto;
 }
 
 .header {

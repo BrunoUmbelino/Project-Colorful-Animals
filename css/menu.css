@@ -1,7 +1,9 @@
+.menu {
+    position: sticky;
+}
+
 .menu ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: hsl(280, 96%, 11%);
 }
@@ -25,12 +27,6 @@
 
 
 .menu li a:hover:not(.active){
-    background-color: black ;
+    background-color: hsl(127, 60%, 50%);
+    color: black;
 }
-
-
-.menu {
-    position: sticky;
-}
-
-
