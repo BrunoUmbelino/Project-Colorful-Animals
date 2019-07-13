@@ -8,17 +8,38 @@
     height: 100px;
     background-color: green;
     position: relative;
-    animation-name: animation;
+    animation-name: animation-square;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
-    position: relative;
 }
 
-@keyframes animation{
+.animated-circle {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 5em;
+    border-radius: 50px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-name: animation-circle;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes animation-square{
     0%{background-color: red; left:0px; top:0px;}
     25%{background-color: blue; transform: rotate(20deg); left:80vw; top:0px;}
     50%{background-color: yellow; transform: rotate(-360deg); left:50vw; top:20vh;}
     75%{background-color: green; transform: rotate(20deg); left:0px; top:20vh;}
     100%{background-color: white; left:0px; top:0px;}
 }
+
+@keyframes animation-circle {
+    0%{bottom: 0%; left: 5%;}
+    25%{bottom: 10%; left: 10%;}
+    50%{background-color: red; bottom: 20%; left: 15%;}
+    75%{bottom: 30%; left: 20%;}
+    100%{bottom: 40%; left: 25%;}
+}
+
