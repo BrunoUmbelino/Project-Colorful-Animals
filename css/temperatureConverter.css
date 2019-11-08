@@ -1,0 +1,28 @@
+
+.temperature-converter {
+    height: 33.33vh;
+}
+
+#fahrenheit {
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+}
+
+input[type = number] {
+    background: linear-gradient(45deg,#2b5876,#4e4376);
+    width: 100%;
+    color: white;
+    font-size: 8em;
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+    border: 0;
+    outline: none;
+}
+
+::-moz-placeholder {
+    color: hsl(0, 0%, 50%);
+}
+
+::-webkit-input-placeholder {
+    color: hsl(0, 0%, 50%);
+}
