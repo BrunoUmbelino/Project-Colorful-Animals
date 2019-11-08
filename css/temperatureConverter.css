@@ -1,6 +1,6 @@
 
-.temperature-converter {
-    height: 33.33vh;
+.main {
+    height: 60%;
 }
 
 .image-Hummingbird {
@@ -37,7 +37,7 @@ img {
 input[type = number] {
     background: linear-gradient(45deg,#2b5876,#4e4376);
     width: 100%;
-    height: 50%;
+    height: 20vh;
     color: white;
     font-size: 8em;
     font-family: 'Asap', sans-serif;

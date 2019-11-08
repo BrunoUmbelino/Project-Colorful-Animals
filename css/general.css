@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .container {
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
