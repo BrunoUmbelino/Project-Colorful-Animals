@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/background-image.css">
     <link rel="stylesheet" href="../css/gridGeneral.css">
+    <link rel="stylesheet" href="../css/temperatureConverter.css">
     <meta charset="UTF-8">
 </head>
 
@@ -19,7 +20,7 @@
             <nav class="menu">
                 <ul>
                     <li><a href="../html/home.html"> Home</a></li>
-                    <li><a href="../html/contact.html"> Contact</a></li>
+                    <li><a href="../html/formAndTable.html">Form and Table</a></li>
                     <li><a href="../html/listsAndGradients.html"> Lists and Gradients</a></li>
                     <li><a href="../html/background-image.html"> Background Image</a></li>
                     <li><a href="../html/animation.html">Animation</a></li>
@@ -36,18 +37,17 @@
         <!--Main Content-->
         <div class="main">
             <main>
-                <div class="TwoBackground-image"></div>
-
-                <div class="pai-box">
-                    <div class="box">
-                        <img src="../img/firefox.jpg">
-                        <p class="fire-raposa">Fox</p>
-                        <p> Vivamus pellentesque, tellus id sagittis finibus, diam urna porttitor ipsum, nec porttitor
-                            leo risus id lectus. Nunc sollicitudin scelerisque sem. Phasellus ultrices mollis
-                            tortor, vel dignissim nibh dictum id. Donec porttitor felis at tincidunt vehicula.
-                            Vivamus maximus ligula sed ligula sagittis eleifend. Proin arcu lectus, imperdiet
-                            lobortis faucibus ac, dapibus non ante. Donec placerat id metus sed blandit. Nunc
-                            interdum ante id viverra lacinia. </p>
+                <div class="temperature-converter">
+                    <div id="celsius">
+                        <input type="number" placeholder="Celsius...">
+                    </div>
+            
+                    <div id="fahrenheit">
+                        <input type="number" placeholder="Fahrenheit...">
+                    </div>
+            
+                    <div id="kelvin">
+                        <input type="number" placeholder="Kelvin...">
                     </div>
                 </div>
 
@@ -63,6 +63,6 @@
             </footer>
         </div>
     </div>
+    <script src='../js/temperatureConverter.js'></script>
 </body>
-
 </html>
