@@ -7,7 +7,7 @@
 }
 
 .image-the-scream {
-    min-width: 15%;
+    min-width: 12%;
     height: 22vh;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .beverage-lists .lista-ordenada:active {
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 
 .beverage-lists .lista-desordenada {
@@ -54,7 +54,7 @@
 }
 
 .beverage-lists .lista-desordenada:active {
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 
 .beverage-lists .lista-descritiva {
@@ -73,7 +73,7 @@
 }
 
 .beverage-lists .lista-descritiva:active {
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 
 .beverage-lists .lista-desordenada-dentroDeLista {
@@ -89,7 +89,7 @@
 }
 
 .beverage-lists .lista-desordenada-dentroDeLista:active{
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 
 .linear-gradient{
