@@ -24,11 +24,11 @@
     }
 }
 
-.header{
+header, nav{
     grid-area: header;
 }
 
-.main {
+main {
    grid-area: main;
    padding: 1em;
 }
@@ -40,6 +40,6 @@
     box-sizing: border-box;
 }
 
-.footer {
+footer {
     grid-area: footer;
 }

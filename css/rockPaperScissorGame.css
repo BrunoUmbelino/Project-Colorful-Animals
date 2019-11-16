@@ -8,17 +8,7 @@
     background-image: url(../img/image-goat.jpg);
 }
 
-body {
-    background: white;
-}
-
-header {
-    background: white;
-}
-
 header > h1 {
-    color: brown;
-    text-align: center;
     font-family: 'Asap', sans-serif;
 }
 

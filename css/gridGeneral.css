@@ -6,18 +6,18 @@
     "header"
     "main"
     "footer";
-    grid-template-columns: minmax(300px, 1ft);
-    grid-template-rows: auto minmax(100vh, auto) auto;
+    grid-template-columns: minmax(300px, 1fr);
+    grid-template-rows: auto minmax(70vh, auto) auto;
 }
 
-.header {
+header, nav {
     grid-area: header;
 }
 
-.main {
+main {
     grid-area: main;
 }
 
-.footer {
+footer {
     grid-area: footer;
 }
