@@ -2,9 +2,14 @@
     background-image: url(../img/image-macaw.jpg);
 }
 
+.table-area {
+    overflow-x: auto;
+}
+
 table, th, td {
     border-spacing: 2px;
     text-align: center;
+    
 }
 
 th {
@@ -22,16 +27,10 @@ td:nth-child(1n+2) {
     border-left: 2px solid white;
 }
 
-caption {
-    margin-bottom: 1vh;
-}
-
 table {
-    width: 95%; 
+    width: 90%; 
     border: 2px solid black;
-    margin-top:20px;
-    margin-bottom: 30px;
-    margin: auto;
+    margin: 20px auto;
 }
 
 table caption {
@@ -48,11 +47,12 @@ tr:hover {
 }
 
 .formulario {
-    padding: 3vw;
+    padding: 10px 25px;
 }
 
 .formulario input[type=text], input[type=date], input[type=email], textarea, select{
     width: 40%;
+    min-width: 250px;
     padding: 1vw;
     box-sizing: border-box;
     border-bottom: 2px solid hsl(271, 40%, 53%);
@@ -106,7 +106,6 @@ tr:hover {
 .formulario textarea {
     resize: none;
 }
-
 
 .formulario .radioOption{
     display: inline;

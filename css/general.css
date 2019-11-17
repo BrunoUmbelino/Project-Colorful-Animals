@@ -7,12 +7,6 @@
     text-align: left;
 }
 
-@media(max-width:300px){
-    .container {
-        font-size: 14px;
-    }
-}
-
 body {
     background-color: hsl(194, 100%, 95%);
 }
@@ -21,6 +15,12 @@ body {
     background-repeat: repeat-x;
     width: 100%; 
     height: 20em;
+}
+
+@media(max-width: 400px) {
+    .headerImage {
+        background-size: 360px auto;
+    }
 }
 
 h1 {
@@ -68,9 +68,12 @@ button {
     margin: 1em;
 }
 
-.posicionamento-btn {
+.posicionamento-btn{
+    text-align: center;
+}
+
+.posicionamento-btn a{
     width: 10%;
-    margin: auto;
 }
 
 .link-button {
