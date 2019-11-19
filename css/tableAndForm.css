@@ -121,9 +121,9 @@ cite {
 }
 
 address {
+    font-size: 1.3em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     left: 2%;
     text-align: justify;
-    padding: 10px;
-    position: relative;
+    margin: 20px 25px;
 }
