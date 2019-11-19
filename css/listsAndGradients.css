@@ -38,68 +38,70 @@
     padding: 5px;
 }
 
-.lista-desordenada-dentroDeLista ul{
-  margin: 0;
-  padding: 15px;
-}
-
-.beverage-lists .lista-ordenada {
+.beverage-lists .ordered-list {
     list-style-type:upper-roman;
     background-image: linear-gradient(hsl(16, 100%, 66%), yellow);
 }
 
-.beverage-lists .lista-ordenada li {
+.beverage-lists .ordered-list li {
     color: black;
     background-color: hsl(25, 100%, 50%);
     margin: 10px;
 }
 
-.beverage-lists .lista-desordenada {
+.beverage-lists .unordered-list {
     list-style-type: armenian;
     background-color: hsl(180, 100%, 30%);
 }
 
-.beverage-lists .lista-desordenada li {
+.beverage-lists .unordered-list li {
     background: linear-gradient(to right, hsl(240, 70%, 50%), hsl(0, 70%, 50%));
     color: white;
 }
 
-.beverage-lists .lista-descritiva {
+.beverage-lists .descriptive-list {
     background: linear-gradient(to left, #d5f4e6, #86af49) ;
 }
 
-.beverage-lists .lista-descritiva dt{
+.beverage-lists .descriptive-list dt{
     background: linear-gradient(to left, #4040a1, hsl(24, 100%, 57%));
 }
 
-.beverage-lists .lista-descritiva dd { 
+.beverage-lists .descriptive-list dd { 
     background: linear-gradient(to left, #d5f4e6, hsl(84, 41%, 49%));
 }
 
-.beverage-lists .lista-desordenada-dentroDeLista {
+.beverage-lists .nested-unordered-list {
     background: linear-gradient(to top left, blue, orange);
 }
 
-.beverage-lists .lista-desordenada-dentroDeLista li{
+.beverage-lists  .nested-unordered-list ul{
+    margin: 0;
+    padding: 15px;
+  }
+
+.beverage-lists .nested-unordered-list li{
     background: linear-gradient(to top left, hsl(39, 80%, 50%), hsl(0, 80%, 50%));
     color: black;
 }
 
-.beverage-lists .lista-ordenada:active {
+
+.beverage-lists .ordered-list:active {
     transform: scale(1.1);
 }
 
-.beverage-lists .lista-desordenada:active {
+.beverage-lists .unordered-list:active {
     transform: scale(1.1);
 }
 
-.beverage-lists .lista-descritiva:active {
+.beverage-lists .descriptive-list:active {
     transform: scale(1.1);
 }
 
-.beverage-lists .lista-desordenada-dentroDeLista:active{
+.beverage-lists .nested-unordered-list:active{
     transform: scale(1.1);
 }
+
 
 .linear-gradient{
     margin: 2vmax 0px 2vmax 0px;
