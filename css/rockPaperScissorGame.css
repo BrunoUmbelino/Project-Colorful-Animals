@@ -47,14 +47,21 @@ header > h1 {
 }
 
 .result {
-    font-size: 40px;
-    color:black
+    width: 100%;
+    font-size: 35px;
+    color:black;
 }
 
 .result > p {
-    text-align: center;
     font-family: 'Asap', sans-serif;
     font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+    text-indent: 0;
+}
+
+.result > .veredict {
+    font-size: 50px;
 }
 
 .choices {
@@ -76,9 +83,33 @@ header > h1 {
 }
 
 .action-message {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     font-family: 'Asap', sans-serif;
     text-align: center;
     margin: 10px 0;
+}
+
+.green-border {
+    border: 4px solid white;
+}
+
+.green-color {
+    color: hsl(120, 100%, 30%);
+}
+
+.red-border {
+    border: 4px solid white;
+}
+
+.red-color {
+    color: hsl(0, 100%, 40%);
+}
+
+.gray-border {
+    border: 4px solid white;
+}
+
+.gray-color {
+    color: hsl(0, 0%, 40%);
 }
