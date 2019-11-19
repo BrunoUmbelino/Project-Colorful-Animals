@@ -110,3 +110,16 @@ tr:hover {
 .formulario .radioOption{
     display: inline;
 }
+
+cite {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+address {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 2%;
+    text-align: justify;
+    padding: 10px;
+    position: relative;
+}
