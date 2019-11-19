@@ -25,10 +25,27 @@
     margin: auto;
 }
 
+.beverage-lists ul, .beverage-lists ol, .beverage-lists dl{
+    padding: 20px 25px;
+    margin: 20px 0;
+}
+
+.beverage-lists li{
+    padding: 5px;
+}
+
+.beverage-lists dt, .beverage-lists dd {
+    padding: 5px;
+}
+
+.lista-desordenada-dentroDeLista ul{
+  margin: 0;
+  padding: 15px;
+}
+
 .beverage-lists .lista-ordenada {
     list-style-type:upper-roman;
     background-image: linear-gradient(hsl(16, 100%, 66%), yellow);
-    padding: 10px;
 }
 
 .beverage-lists .lista-ordenada li {
@@ -37,55 +54,47 @@
     margin: 10px;
 }
 
-.beverage-lists .lista-ordenada:active {
-    transform: scale(1.1);
-}
-
 .beverage-lists .lista-desordenada {
     list-style-type: armenian;
     background-color: hsl(180, 100%, 30%);
-    padding: 20px;
 }
 
 .beverage-lists .lista-desordenada li {
     background: linear-gradient(to right, hsl(240, 70%, 50%), hsl(0, 70%, 50%));
-    padding: 10px;
     color: white;
+}
+
+.beverage-lists .lista-descritiva {
+    background: linear-gradient(to left, #d5f4e6, #86af49) ;
+}
+
+.beverage-lists .lista-descritiva dt{
+    background: linear-gradient(to left, #4040a1, hsl(24, 100%, 57%));
+}
+
+.beverage-lists .lista-descritiva dd { 
+    background: linear-gradient(to left, #d5f4e6, hsl(84, 41%, 49%));
+}
+
+.beverage-lists .lista-desordenada-dentroDeLista {
+    background: linear-gradient(to top left, blue, orange);
+}
+
+.beverage-lists .lista-desordenada-dentroDeLista li{
+    background: linear-gradient(to top left, hsl(39, 80%, 50%), hsl(0, 80%, 50%));
+    color: black;
+}
+
+.beverage-lists .lista-ordenada:active {
+    transform: scale(1.1);
 }
 
 .beverage-lists .lista-desordenada:active {
     transform: scale(1.1);
 }
 
-.beverage-lists .lista-descritiva {
-    background: linear-gradient(to left, #d5f4e6, #86af49) ;
-    padding: 20px;
-}
-
-.beverage-lists .lista-descritiva dt{
-    background: linear-gradient(to left, #4040a1, hsl(24, 100%, 57%));
-    padding: 5px;
-}
-
-.beverage-lists .lista-descritiva dd {
-    background: linear-gradient(to left, #d5f4e6, hsl(84, 41%, 49%));
-    padding: 5px;
-}
-
 .beverage-lists .lista-descritiva:active {
     transform: scale(1.1);
-}
-
-.beverage-lists .lista-desordenada-dentroDeLista {
-    background: linear-gradient(to top left, blue, orange);
-    padding: 20px;
-}
-
-.beverage-lists .lista-desordenada-dentroDeLista li{
-    background: linear-gradient(to top left, hsl(39, 80%, 50%), hsl(0, 80%, 50%));
-    padding: 10px;
-    margin: 10px;
-    color: black;
 }
 
 .beverage-lists .lista-desordenada-dentroDeLista:active{

@@ -111,6 +111,10 @@ tr:hover {
     display: inline;
 }
 
+.formulario fieldset {
+    border: none;
+}
+
 cite {
     font-size: 1.2em;
     text-decoration: underline;
