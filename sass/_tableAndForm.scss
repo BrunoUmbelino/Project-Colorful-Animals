@@ -1,0 +1,109 @@
+.image-macaw {
+  background-image: url(../img/image-macaw.jpg);
+}
+
+.div-table {
+  overflow-x: auto;
+}
+
+.table {
+  width: 90%;
+  border: 2px solid black;
+  margin: 20px auto;
+
+  &__caption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  &__head {
+    height: 50px;
+    background-color: hsl(180, 100%, 41%);
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  &__head,
+  &__data {
+    border-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+  }
+
+  &__data:nth-child(1n + 2) {
+    border-left: 2px solid white;
+  }
+  &__row:nth-child(even) {
+    background-color: hsl(180, 21%, 88%);
+  }
+  &__row:hover {
+    background-color: hsl(160, 100%, 75%);
+  }
+}
+
+.form {
+  padding: 10px 5vw;
+
+  &__row {
+    margin: 1.5rem 0px;
+  }
+
+  &__label,
+  &__legend {
+    font-size: 1.4rem;
+    display: block;
+    margin: 10px 0px 5px 0px;
+    font-weight: 500;
+  }
+
+  &__input-text,
+  &__textArea,
+  &__select {
+    font-size: 1.3rem;
+    width: 40%;
+    min-width: 350px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-bottom: 2px solid hsl(271, 40%, 53%);
+    border-radius: 4px;
+  }
+
+  &__input-text:focus,
+  &__textArea:focus,
+  &__select:focus {
+    background-color: whitesmoke;
+  }
+
+  &__div-flag {
+    font-family: arial;
+    margin-right: 30px;
+    font-size: 1.2em;
+    display: inline-block;
+  }
+
+  &__label-radioOption {
+    display: inline;
+    margin-right: 30px;
+    font-size: 1.2rem;
+  }
+
+  &__fieldset {
+    border: none;
+  }
+}
+
+cite {
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+address {
+  font-size: 1.3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  left: 2%;
+  text-align: justify;
+  margin: 20px 25px;
+  margin: 30px 5vw;
+}

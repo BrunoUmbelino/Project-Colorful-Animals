@@ -1,0 +1,49 @@
+
+.image-Hummingbird {
+    background-image: url(../img/image-hummingbird.jpg);
+}
+
+.pi {
+    border: 2px solid #00d0d0;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: aquamarine;
+    font-size: 1em;
+    z-index: 1;
+    width: 10%;
+    text-align: center;
+}
+
+.pi-simbolo{
+    font-size: 2em;
+}
+
+.temp-converter {
+    margin: 40px 0;
+    text-align: center;
+    position: relative;
+
+    &__input {   
+        height: 100px;
+        width: 95%;
+        background: linear-gradient(45deg, #DC2424, #4a569d  );
+        color: white;
+        font-size: 5em;
+        font-family: 'Asap', sans-serif;
+        text-align: center;
+        outline: none;
+        margin: auto;
+        border-bottom: 4px solid white;
+    }
+}
+
+::-moz-placeholder {
+    color: gray;
+}
+
+::-webkit-input-placeholder {
+    color: gray;
+}
+
+

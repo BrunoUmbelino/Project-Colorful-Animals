@@ -5,24 +5,46 @@
 <head>
     <title>Lorem Ipsum</title>
     <link rel="icon" href="../img/colors.png">
-    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/gridGeneral.css">
-    <link rel="stylesheet" href="../css/menu.css">
-    <link rel="stylesheet" href="../css/listsAndGradients.css">
     <meta charset="UTF-8">
 </head>
 
 <body>
     <div class="container">
         <!--Navigaton Menu-->
-        <nav class="menu">
-            <ul>
-                <li><a href="../html/home.html">Home</a></li>
-                <li><a href="../html/tableAndForm.html">Table and Form</a></li>
-                <li><a href="../html/listsAndGradients.html">Lists and Gradients</a></li>
-                <li><a href="../html/rockPaperScissorsGame.html">Rock Paper Scissor Game</a></li>
-                <li><a href="../html/temperatureConverter.html">Temperature Converter</a></li>
-                <li><a href="../html/animation.html">Animation</a></li>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/home.html">
+                        Home
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/tableAndForm.html">
+                        Table and Form
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/listsAndGradients.html">
+                        Lists and Gradients
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/rockPaperScissorsGame.html">
+                        Rock Paper Scissor Game
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/temperatureConverter.html">
+                        Temperature Converter
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/animation.html">
+                        Animation
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -33,53 +55,56 @@
         </header>
 
         <main>
-            <p class="text-ipsun">Aliquam pretium rutrum. </p>
+            <p class="p-ipsun">Aliquam pretium rutrum. </p>
             <hr>
 
-            <div class="the-scream">
-                <figure>
-                    <a href="https://pt.wikipedia.org/wiki/O_Grito" target="_blank">
-                        <img class="image-the-scream" src="../img/image-theScream.jpg"
-                            alt="Painting 'The Scream' by Edvard Munch" title="Painting 'The Scream' by Edvard Munch">
+            <div class="div-scream">
+                <figure class="screm">
+                    <a class="screm__a" href="https://pt.wikipedia.org/wiki/O_Grito" target="_blank">
+                        <img class="scream__img"
+                            src="../img/image-theScream.jpg"
+                            alt="Painting 'The Scream' by Edvard Munch" 
+                            title="Painting 'The Scream' by Edvard Munch">
                     </a>
-                    <figcaption>The agonised face in the painting has become one of the most iconic images of
+                    <figcaption class="scream__figcaption">The agonised face in the painting has become one of the most iconic images of
                         art,
-                        seen as symbolising the anxiety of modern man.</figcaption>
+                        seen as symbolising the anxiety of modern man.
+                    </figcaption>
                 </figure>
-                <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.
-                    <br>
-                    <bdo dir="rtl"><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</bdo></p>
+                <div>
+                    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.
+                        <br>
+                        <bdo dir="rtl"><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</bdo></p>
+                </div>
             </div>
 
-            <div class="beverage-lists">
+            <div class="drinks">
                 <hr>
-                <ol class="ordered-list">
+                <ol class="drinks__ol">
                     <li>Coffee</li>
                     <li>Milk</li>
                     <li>Tea</li>
                 </ol>
                 <hr>
 
-                <ul class="unordered-list">
+                <ul class="drinks__ul">
                     <li>Coffee</li>
                     <li>Milk</li>
                     <li>Tea</li>
                 </ul>
                 <hr>
 
-                <dl class="descriptive-list">
-                    <dt>Coffe
-                    <dt>
+                <dl class="drinks__dl">
+                    <dt>Coffe</dt>
                     <dd>black hot drink</dd>
-                    <dt>Milk
-                    <dt>
+                    <dt>Milk</dt>
                     <dd>- white cold drink</dd>
                     <dt>Tea</dt>
                     <dd>hot liquid can have several colors</dd>
                 </dl>
                 <hr>
 
-                <ul class="nested-unordered-list">
+                <ul class="drinks__nested-ul">
                     <li>Beer</li>
                     <li>Juice</li>
                     <ul>
@@ -91,15 +116,18 @@
                 <hr>
             </div>
 
-            <div class="linear-gradient">
+            <div class="linear-gradient1">
             </div>
 
-            <div class="repeating-linear-gradient">
+            <div class="linear-gradient2">
             </div>
 
-            <div class="posicionamento-btn">
-                <a href="https://giphy.com/gifs/goodbye-year-13RRgTkPJJPda8/fullscreen"><button
-                        class="link-button">IMPLODE</button></a>
+            <div class="btn-block">
+                <a href="https://giphy.com/gifs/goodbye-year-13RRgTkPJJPda8/fullscreen">
+                    <button class="btn1 btn--link">
+                        IMPLODE
+                    </button>
+                </a>
             </div>
         </main>
 

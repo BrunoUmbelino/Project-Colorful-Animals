@@ -1,0 +1,146 @@
+.image-ferret {
+  background-image: url(../img/image-ferret.jpg);
+}
+
+.p-ipsun {
+  margin: 30px;
+  font-size: 1.2rem;
+  letter-spacing: 2vw;
+  text-shadow: 3px 2px 5px green;
+}
+
+.div-scream {
+  color: firebrick;
+  padding: 15px 10vw;
+}
+
+.scream__figcaption {
+  margin: 15px 0px;
+}
+
+.drinks {
+  width: 80%;
+  margin: auto;
+
+  &__ul,
+  &__ol,
+  &__dl {
+    padding: 20px 25px;
+    margin: 20px 0;
+  }
+
+  &__nested-ul {
+    padding: 20px 25px;
+    margin: 20px 0;
+  }
+
+  & li {
+    padding: 5px;
+  }
+
+  & dt,
+  & dd {
+    padding: 5px;
+  }
+
+  &__ol {
+    list-style-type: upper-roman;
+    background-image: linear-gradient(hsl(16, 100%, 66%), yellow);
+  }
+
+  &__ol li {
+    color: black;
+    background-color: hsl(25, 100%, 50%);
+    margin: 10px;
+  }
+
+  &__ul {
+    list-style-type: armenian;
+    background-color: hsl(180, 100%, 30%);
+  }
+
+  &__ul li {
+    background: linear-gradient(to right, hsl(240, 70%, 50%), hsl(0, 70%, 50%));
+    color: white;
+  }
+
+  &__dl {
+    background: linear-gradient(to left, #d5f4e6, #86af49);
+  }
+
+  &__dl dt {
+    background: linear-gradient(to left, #4040a1, hsl(24, 100%, 57%));
+  }
+
+  &__dl dd {
+    background: linear-gradient(to left, #d5f4e6, hsl(84, 41%, 49%));
+  }
+
+  &__nested-ul {
+    background: linear-gradient(to top left, blue, orange);
+  }
+
+  &__nested-ul ul {
+    padding: 15px;
+  }
+
+  &__nested-ul li {
+    margin: 3px 0px;
+    color: white;
+    background: linear-gradient(
+      to top left,
+      hsl(39, 80%, 50%),
+      hsl(0, 80%, 50%)
+    );
+  }
+
+  &__ol:active {
+    transform: scale(1.1);
+  }
+
+  &__ul:active {
+    transform: scale(1.1);
+  }
+
+  &__dl:active {
+    transform: scale(1.1);
+  }
+
+  &__nested-ul:active {
+    transform: scale(1.1);
+  }
+}
+
+.linear-gradient1 {
+  margin: 2vmax 0px 2vmax 0px;
+  width: 100%;
+  height: 5em;
+  background: repeating-linear-gradient(
+    45deg,
+    red 0%,
+    black 35%,
+    blue 65%,
+    green 100%
+  );
+}
+
+.linear-gradient1:active {
+  transform: skewX(40deg);
+}
+
+.linear-gradient2 {
+  margin: 2vmax 0px 2vmax 0px;
+  width: 100%;
+  height: 5em;
+  background: repeating-linear-gradient(
+    45deg,
+    red 0px,
+    black 40px,
+    white 40px,
+    blue 80px
+  );
+}
+
+.linear-gradient2:active {
+  transform: rotate(10deg);
+}

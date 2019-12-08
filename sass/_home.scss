@@ -1,0 +1,80 @@
+header {
+  .image-raccoon {
+    background-image: url(../img/image-raccoon.jpg);
+  }
+}
+
+main {
+  /*div tooltip*/
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+
+    /*invisible text block*/
+    &__text {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 120%;
+      left: 50%;
+      margin-left: -60px;
+
+      /* arrow shaped border */
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+      }
+    }
+    /*gives text block visibility*/
+    &:hover .tooltip__text {
+      visibility: visible;
+    }
+  }
+
+  .paragraph {
+    font-family: sans-serif;
+    margin: 1.5rem;
+    text-indent: 1rem;
+  }
+
+  .section-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  
+  @media (min-width: 800px) {
+    .section-text {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(auto, 1fr));
+      grid-template-rows: auto;
+    }
+  }
+
+  .rightcolumn {
+    height: 100vh;
+  }
+
+  blockquote {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px dotted black;
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px hsl(194, 65%, 75%);
+  }
+}

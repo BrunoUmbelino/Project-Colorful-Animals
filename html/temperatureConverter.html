@@ -5,24 +5,46 @@
 <head>
     <title>Lorem Ipsum</title>
     <link rel="icon" href="../img/colors.png">
-    <link rel="stylesheet" href="../css/general.css">
-    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/gridGeneral.css">
-    <link rel="stylesheet" href="../css/temperatureConverter.css">
     <meta charset="UTF-8">
 </head>
 
 <body>
     <div class="container">
 
-        <nav class="menu">
-            <ul>
-                <li><a href="../html/home.html">Home</a></li>
-                <li><a href="../html/tableAndForm.html">Table and Form</a></li>
-                <li><a href="../html/listsAndGradients.html">Lists and Gradients</a></li>
-                <li><a href="../html/rockPaperScissorsGame.html">Rock Paper Scissor Game</a></li>
-                <li><a href="../html/temperatureConverter.html">Temperature Converter</a></li>
-                <li><a href="../html/animation.html">Animation</a></li>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/home.html">
+                        Home
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/tableAndForm.html">
+                        Table and Form
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/listsAndGradients.html">
+                        Lists and Gradients
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/rockPaperScissorsGame.html">
+                        Rock Paper Scissor Game
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/temperatureConverter.html">
+                        Temperature Converter
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/animation.html">
+                        Animation
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -34,17 +56,17 @@
 
         <!--Main Content-->
         <main>
-            <div class="temperature-converter">
-                <div id="celsius">
-                    <input type="number" placeholder="Celsius...">
+            <div class="temp-converter">
+                <div id="celsius" class="temp-converter__div">
+                    <input class="temp-converter__input" type="number" placeholder="Celsius...">
                 </div>
 
-                <div id="fahrenheit">
-                    <input type="number" placeholder="Fahrenheit...">
+                <div id="fahrenheit" class="temp-converter__div">
+                    <input class="temp-converter__input" type="number" placeholder="Fahrenheit...">
                 </div>
 
-                <div id="kelvin">
-                    <input type="number" placeholder="Kelvin...">
+                <div id="kelvin" class="temp-converter__div">
+                    <input class="temp-converter__input" type="number" placeholder="Kelvin...">
                 </div>
             </div>
 

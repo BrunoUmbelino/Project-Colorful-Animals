@@ -4,10 +4,8 @@
 <head>
     <title>Lorem Ipsum</title>
     <link rel="icon" href="../img/colors.png">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/gridGeneral.css">
-    <link rel="stylesheet" href="../css/general.css">
-    <link rel="stylesheet" href="../css/menu.css">
-    <link rel="stylesheet" href="../css/tableAndForm.css">
     <meta charset="UTF-8">
 </head>
 
@@ -15,14 +13,38 @@
     <div class="container">
         <!--Navigation Menu-->
 
-        <nav class="menu">
-            <ul>
-                <li><a href="../html/home.html">Home</a></li>
-                <li><a href="../html/tableAndForm.html">Table and Form</a></li>
-                <li><a href="../html/listsAndGradients.html">Lists and Gradients</a></li>
-                <li><a href="../html/rockPaperScissorsGame.html">Rock Paper Scissor Game</a></li>
-                <li><a href="../html/temperatureConverter.html">Temperature Converter</a></li>
-                <li><a href="../html/animation.html">Animation</a></li>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/home.html">
+                        Home
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/tableAndForm.html">
+                        Table and Form
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/listsAndGradients.html">
+                        Lists and Gradients
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/rockPaperScissorsGame.html">
+                        Rock Paper Scissor Game
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/temperatureConverter.html">
+                        Temperature Converter
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/animation.html">
+                        Animation
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -32,118 +54,146 @@
             <h1>Table and Form</h1>
         </header>
 
-
-        <div class="main">
-            <main>
-                <div class="table-area">
-                <table>
-                    <caption><span>Representatives</span></caption>
-                    <tr>
-                        <th>Name</th>
-                        <th>Country</th>
-                        <th>E-mail</th>
-                        <th colspan="2">Phone</th>
+        <main>
+            <div class="div-table">
+                <table class="table">
+                    <caption class="table__caption"><span>Representatives</span></caption>
+                    <tr class="table__row">
+                        <th class="table__head">Name</th>
+                        <th class="table__head">Country</th>
+                        <th class="table__head">E-mail</th>
+                        <th class="table__head" colspan="2">Phone</th>
                     </tr>
-                    <tr>
-                        <td>João Silva</td>
-                        <td>Brazil</td>
-                        <td>joao.silva@email.com</td>
-                        <td>1111-1111</td>
-                        <td>2222-2222</td>
+                    <tr class="table__row">
+                        <td class="table__data">João Silva</td>
+                        <td class="table__data">Brazil</td>
+                        <td class="table__data">joao.silva@email.com</td>
+                        <td class="table__data">1111-1111</td>
+                        <td class="table__data">2222-2222</td>
                     </tr>
-                    <tr>
-                        <td>Christina Berglund</td>
-                        <td>Sweden</td>
-                        <td>christina.berglund@email.com</td>
-                        <td>3333-3333</td>
-                        <td>4444-4444</td>
+                    <tr class="table__row">
+                        <td class="table__data">Christina Berglund</td>
+                        <td class="table__data">Sweden</td>
+                        <td class="table__data">christina.berglund@email.com</td>
+                        <td class="table__data">3333-3333</td>
+                        <td class="table__data">4444-4444</td>
                     </tr>
-                    <tr>
-                        <td>Francisco Chang</td>
-                        <td>Mexico</td>
-                        <td>francisco.chang@gmail.com</td>
-                        <td>5555-5555</td>
-                        <td>6666-6666</td>
+                    <tr class="table__row">
+                        <td class="table__data">Francisco Chang</td>
+                        <td class="table__data">Mexico</td>
+                        <td class="table__data">francisco.chang@gmail.com</td>
+                        <td class="table__data">5555-5555</td>
+                        <td class="table__data">6666-6666</td>
                     </tr>
-                    <tr>
-                        <td>Anelise Anders</td>
-                        <td>Germany</td>
-                        <td>anelise.anders@email.com</td>
-                        <td>7777-7777</td>
-                        <td>8888-8888</td>
+                    <tr class="table__row">
+                        <td class="table__data">Anelise Anders</td>
+                        <td class="table__data">Germany</td>
+                        <td class="table__data">anelise.anders@email.com</td>
+                        <td class="table__data">7777-7777</td>
+                        <td class="table__data">8888-8888</td>
                     </tr>
-                    <tr>
-                        <td>Giovanni Rovelli</td>
-                        <td>Italy</td>
-                        <td>giovanni.rovelli@email.com</td>
-                        <td>9999-9999</td>
-                        <td>1010-1010</td>
+                    <tr class="table__row">
+                        <td class="table__data">Giovanni Rovelli</td>
+                        <td class="table__data">Italy</td>
+                        <td class="table__data">giovanni.rovelli@email.com</td>
+                        <td class="table__data">9999-9999</td>
+                        <td class="table__data">1010-1010</td>
                     </tr>
                 </table>
             </div>
 
-                <form class="formulario" action="">
-                    <label for="firstName">First Name: </label>
-                    <input type="text" id="firstName" name="first name" placeholder="Mickey">
+            <form class="form" action="">
+                <!--Input First Name-->
+                <div class="form__row">
+                    <label class="form__label" for="firstName">First Name: </label>
+                    <input class="form__input-text" type="text" id="firstName" name="first name" placeholder="Mickey">
+                </div>
 
-                    <label for="lastName">Last Name: </label>
-                    <input type="text" id="lastName" name="last name" placeholder="Mouse">
+                <!--Input Last Name-->
+                <div class="form__row">
+                    <label class="form__label" for="lastName">Last Name: </label>
+                    <input class="form__input-text" type="text" id="lastName" name="last name" placeholder="Mouse">
+                </div>
 
-                    <label for="birthday">Birthday: </label>
-                    <input type="date" id="birthday" name="birthday">
+                <!--Input Birthday-->
+                <div class="form__row">
+                    <label class="form__label" for="birthday">Birthday: </label>
+                    <input class="form__input-text" type="date" id="birthday" name="birthday">
+                </div>
 
-                    <label for="email">E-mail: </label>
-                    <input type="email" id="email" name="email" placeholder="mickey@email.com">
+                <!--Input E-mail-->
+                <div class="form__row">
+                    <label class="form__label" for="email">E-mail: </label>
+                    <input class="form__input-text" type="email" id="email" name="email" placeholder="mickey@email.com">
+                </div>
 
-                    <fieldset>
-                        <legend>Gender</legend>
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="male" class="radioOption">Male</label>
+                <!--Radio Gender-->
+                <div class="form__row">
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend">Gender</legend>
+                        <input class="form__input-flag" type="radio" id="male" name="gender" value="male">
+                        <label for="male" class="form__label-radioOption">Male</label>
 
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female" class="radioOption">Female</label>
+                        <input class="form__input-flag" type="radio" id="female" name="gender" value="female">
+                        <label for="female" class="form__label-radioOption">Female</label>
 
-                        <input type="radio" id="other" name="gender" value="other" checked>
-                        <label for="other" class="radioOption">Other</label>
+                        <input class="form__input-flag" type="radio" id="other" name="gender" value="other" checked>
+                        <label for="other" class="form__label-radioOption">Other</label>
                     </fieldset>
+                </div>
 
-                    <label for="favoriteDrink">Favorite Drink: </label>
-                    <select id="favoriteDrink" name="favoriteDrink">
+                <!--Select Favorite Drink-->
+                <div class="form__row">
+                    <label class="form__label" for="favoriteDrink">Favorite Drink: </label>
+                    <select class="form__select" id="favoriteDrink" name="favoriteDrink">
                         <option name="Coffee" selected>Coffee</option>
                         <option name="Tea">Tea</option>
                         <option name="Beer">Beer</option>
                     </select>
+                </div>
 
-                    <label for="activity">Activity: </label>
-                    <input type="checkbox" id="activity" name="activity" value="Work">Work
-                    <input type="checkbox" id="activity" name="activity" value="Study">Study
+                <!--Checkbox Activity-->
+                <div class="form__row">
+                    <label class="form__label" for="activity">Activity: </label>
+                    <div id="form__div-flag" class="form__div-flag">
+                        <input  for="form__div-flag" type="checkbox" id="activity" name="activity" value="Work">
+                        Work
+                    </div>
+                    <div id="form__div-flag" class="form__div-flag">
+                        <input  for="form__div-flag" type="checkbox" id="activity" name="activity" value="Study">
+                        Study
+                    </div>
+                </div>
 
-                    <label for="message">Message: </label>
-                    <textarea name="Message" id="message" rows="3" cols="30" placeholder="..."></textarea>
-                    <br>
+                <!--TextArea Message-->
+                <div class="form__row">
+                    <label class="form__label" for="message">Message: </label>
+                    <textarea class="form__textArea" name="Message" id="message" rows="5" cols="30"
+                        placeholder="...">
+                    </textarea>
+                </div>
 
-                    <input type="reset" accesskey="r" value="Reset">
-                    <input type="submit" accesskey="s" value="Submit">
-                </form>
+                <!--Buttons-->
+                <div class="form__row">
+                    <input class="btn2 btn--submit" type="reset" accesskey="r" value="Reset">
+                    <input class="btn2 btn--reset" type="submit" accesskey="s" value="Submit">
+                </div>
+            </form>
 
-                <hr>
-                    <address>
-                        <h4>Visit US!</h4> <br>
-                        Street: Very Far <br>
-                        Num: &infin; <br>
-                        Andrômeda galaxy (M31, NGC 224) <br>
-                        CEP: Unknown
-                    </address>
-            </main>
-        </div>
-
+            <hr>
+            <address>
+                <h4>Visit US!</h4> <br>
+                Street: Very Far <br>
+                Num: &infin; <br>
+                Andrômeda galaxy (M31, NGC 224) <br>
+                CEP: Unknown
+            </address>
+        </main>
         <!--Footer-->
-        <div class="footer">
-            <footer>
-                © Colorful Animals | 28/11/2018 | Created by Bruno Umbelino
-            </footer>
-        </div>
-    </div>
+
+        <footer>
+            © Colorful Animals | 28/11/2018 | Created by Bruno Umbelino
+        </footer>
 </body>
 
 

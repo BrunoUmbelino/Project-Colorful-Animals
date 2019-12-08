@@ -4,23 +4,45 @@
 <head>
     <meta charset='utf-8'>
     <title>Rock Paper Scissors Game</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/menu.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/general.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/gridGeneral.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/rockPaperScissorGame.css'>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/gridGeneral.css">
 </head>
 
 <body>
     <div class="container">
-        <nav class="menu">
-            <ul>
-                <li><a href="../html/home.html">Home</a></li>
-                <li><a href="../html/tableAndForm.html">Table and Form</a></li>
-                <li><a href="../html/listsAndGradients.html">Lists and Gradients</a></li>
-                <li><a href="../html/rockPaperScissorsGame.html">Rock Paper Scissor Game</a></li>
-                <li><a href="../html/temperatureConverter.html">Temperature Converter</a></li>
-                <li><a href="../html/animation.html">Animation</a></li>
+
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/home.html">
+                        Home
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/tableAndForm.html">
+                        Table and Form
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/listsAndGradients.html">
+                        Lists and Gradients
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/rockPaperScissorsGame.html">
+                        Rock Paper Scissor Game
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/temperatureConverter.html">
+                        Temperature Converter
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../html/animation.html">
+                        Animation
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -32,25 +54,29 @@
 
         <main>
             <div class="score-board">
-                <div id="user-label" class="badge">User</div>
-                <div id="comp-label" class="badge">Comp</div>
-                <span id="user-score">0</span> :
-                <span id="comp-score">0</span>
+                <div class="score-board__user-label score-board__user-label--badge" id="user-label">
+                    User
+                </div>
+                <div class="score-board__comp-label score-board__user-label--badge" id="comp-label">
+                    Comp
+                </div>
+                <span class="score-board__user-score" id="user-score">0</span> :
+                <span class="score-board__comp-score" id="comp-score">0</span>
             </div>
 
             <div class="result">
-                <p class="argumentation"></p>
-                <p class="veredict"></p>
+                <p class="result__p-combat"></p>
+                <p class="result__p-result result__p-result--size"></p>
             </div>
 
             <div class="choices">
-                <div id="choice-rock" class="choice">
+                <div id="choice-rock" class="choices__item">
                     <img src="../img/rock.png" alt="Rock icon">
                 </div>
-                <div id="choice-paper" class="choice">
+                <div id="choice-paper" class="choices__item">
                     <img src="../img/paper.png" alt="Paper icon">
                 </div>
-                <div id="choice-scissor" class="choice">
+                <div id="choice-scissor" class="choices__item">
                     <img src="../img/scissor.png" alt="Scissor icon">
                 </div>
             </div>
