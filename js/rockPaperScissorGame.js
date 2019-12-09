@@ -3,8 +3,8 @@ let compScore = 0;
 const userScore_span = document.getElementById("user-score");
 const compScore_span = document.getElementById("comp-score");
 const scoreBoard_div = document.querySelector(".score-board");
-const result_argumentation_p = document.querySelector(".result__p-combat");
-const result_veredict_p = document.querySelector(".result__p-result");
+const combat_p = document.getElementById("combat-p");
+const result_p = document.getElementById("result-p");
 const choiceRock_div = document.getElementById("choice-rock");
 const choicePaper_div = document.getElementById("choice-paper");
 const choiceScissor_div = document.getElementById("choice-scissor");
@@ -19,61 +19,56 @@ function genCompChoice() {
     return choices[randomNumer];
 }
 
+function getCombatString(userChoice, computerChoice) {
+    const userWord = " user choice ".fontsize(4).sup();
+    const compWord = " comp choice ".fontsize(4).sup();
+    const vsWord = "vs".fontsize(6);
+
+    combat_p.innerHTML =
+        userWord + capitalizing(userChoice) +
+        " " + vsWord + " "
+        + capitalizing(computerChoice) + compWord;
+}
+
+function getResultStyle(result, userChoice_img) {
+    result_p.classList.add(result + '-color');
+    userChoice_img.classList.add(result + '-border');
+
+    setTimeout(function () {
+        result_p.classList.remove(result + '-color');
+    }, 800);
+    setTimeout(function () {
+        userChoice_img.classList.remove(result + '-border');
+    }, 800);
+}
+
+
 function win(userChoice, computerChoice) {
     userScore++;
     userScore_span.innerHTML = userScore;
-    
-    const userSmallWord = "user choice ".fontsize(4).sup();
-    const compSmallWord = "comp choice ".fontsize(4).sup();
-    const vsSmallWord = "vs".fontsize(6);
     const userChoice_img = document.getElementById("choice-" + userChoice);
 
-    result_argumentation_p.innerHTML = 
-        userSmallWord + capitalizing(userChoice) +
-        " " + vsSmallWord + " "
-        + compSmallWord + capitalizing(computerChoice);
-    result_veredict_p.innerHTML = "You Win!";
-
-    result_veredict_p.classList.add('win-color');
-    userChoice_img.classList.add('win-border');
-    setTimeout(function () { result_veredict_p.classList.remove('win-color'); }, 800);
-    setTimeout(function () { userChoice_img.classList.remove('win-border'); }, 800);
+    getCombatString(userChoice, computerChoice);
+    result_p.innerHTML = "You Win!";
+    getResultStyle("win", userChoice_img);
 }
 
 function lose(userChoice, computerChoice) {
     compScore++;
     compScore_span.innerHTML = compScore;
-    const userSmallWord = "user choice ".fontsize(4).sup();
-    const compSmallWord = "comp choice ".fontsize(4).sup();
-    const vsSmallWord = "vs".fontsize(6);
     const userChoice_img = document.getElementById("choice-" + userChoice);
 
-    result_argumentation_p.innerHTML = userSmallWord + capitalizing(userChoice) +
-        " " + vsSmallWord + " "
-        + compSmallWord + capitalizing(computerChoice);
-    result_veredict_p.innerHTML = "You Lose.";
-
-    result_veredict_p.classList.add('lose-color');
-    userChoice_img.classList.add('lose-border');
-    setTimeout(function () { result_veredict_p.classList.remove('lose-color'); }, 1000);
-    setTimeout(function () { userChoice_img.classList.remove('lose-border'); }, 1000);
+    getCombatString(userChoice, computerChoice);
+    result_p.innerHTML = "You Lose.";
+    getResultStyle("lose", userChoice_img);
 }
 
 function draw(userChoice, computerChoice) {
-    const userSmallWord = "user choice ".fontsize(4).sup();
-    const compSmallWord = "comp choice ".fontsize(4).sup();
-    const vsSmallWord = "vs".fontsize(6);
     const userChoice_img = document.getElementById("choice-" + userChoice);
 
-    result_argumentation_p.innerHTML = userSmallWord + capitalizing(userChoice) +
-        "\n " + vsSmallWord + " "
-        + compSmallWord + capitalizing(computerChoice);
-    result_veredict_p.innerHTML = "Draw Game.";
-
-    result_veredict_p.classList.add('draw-color');
-    userChoice_img.classList.add('draw-border');
-    setTimeout(function () { result_veredict_p.classList.remove('draw-color'); }, 800);
-    setTimeout(function () { userChoice_img.classList.remove('draw-border'); }, 800);
+    getCombatString(userChoice, computerChoice);
+    result_p.innerHTML = "Draw Game.";
+    getResultStyle("draw", userChoice_img);
 }
 
 function game(userChoice) {
@@ -98,8 +93,8 @@ function game(userChoice) {
 }
 
 function main() {
-    choiceRock_div.addEventListener("click", () =>  game("rock"));
-    choicePaper_div.addEventListener("click", () =>  game("paper"));
+    choiceRock_div.addEventListener("click", () => game("rock"));
+    choicePaper_div.addEventListener("click", () => game("paper"));
     choiceScissor_div.addEventListener("click", () => game("scissor"));
 }
 
