@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:700&display=swap');
+
 .nav {
   position: sticky;
 
@@ -9,9 +11,8 @@
     &__item {
       float: left;
       display: block;
-      color: white;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 1em;
+      font-family: 'Asap', sans-serif;
+      font-size: 1.2em;
       cursor: pointer;
     }
 
@@ -19,7 +20,7 @@
       display: block;
       color: white;
       text-align: center;
-      padding: 16px;
+      padding: 18px 25px;
       text-decoration: none;
 
       &:hover {
