@@ -38,9 +38,9 @@ header {
     height: 20em;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 300px) {
     .headerImage {
-      background-size: 360px auto;
+      background-size: 200px auto;
     }
   }
 }

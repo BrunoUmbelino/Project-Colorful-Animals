@@ -1,9 +1,9 @@
-.image-raccoon {
-    background-image: url(../img/image-Koala.jpg);
+.image-bird {
+    background-image: url(../img/image-bird.jpg);
 }
 
 .animated-square{
-    margin: 10em;
+    margin: 1rem;
     width: 100px;
     height: 100px;
     background-color: green;
@@ -17,8 +17,8 @@
 .animated-circle {
     width: 100px;
     height: 100px;
-    background-color: black;
-    margin: 5em;
+    background-color: white;
+    margin: 1rem;
     border-radius: 50px;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -28,18 +28,18 @@
 }
 
 @keyframes animation-square{
-    0%{background-color: red; left:0px; top:0px;}
-    25%{background-color: blue; transform: rotate(20deg); left:80vw; top:0px;}
-    50%{background-color: yellow; transform: rotate(-360deg); left:50vw; top:20vh;}
-    75%{background-color: green; transform: rotate(20deg); left:0px; top:20vh;}
-    100%{background-color: white; left:0px; top:0px;}
+    0%{background-color: white; left:5vw; top:5vh;}
+    25%{background-color: blue; transform: rotate(20deg); left:50vw; top:5vh;}
+    50%{background-color: yellow; transform: rotate(360deg); left:50vw; top:20vh;}
+    75%{background-color: green; transform: rotate(20deg); left:5vh; top:20vh;}
+    100%{background-color: white; left:5vw; top:5vh;}
 }
 
 @keyframes animation-circle {
-    0%{bottom: 0%; left: 5%;}
-    25%{bottom: 10%; left: 10%;}
-    50%{background-color: red; bottom: 20%; left: 15%;}
-    75%{bottom: 30%; left: 20%;}
-    100%{bottom: 40%; left: 25%;}
+    0%{top: 5vh; left: 5vw;}
+    25%{top: 10vh; left: 10vw;}
+    50%{background-color: red; top: 20vh; left: 15vw;}
+    75%{top: 30vh; left: 20vw;}
+    100%{top: 40vh; left: 25vw;}
 }
 
