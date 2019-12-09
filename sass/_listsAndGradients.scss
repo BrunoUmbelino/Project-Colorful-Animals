@@ -50,7 +50,7 @@
 
   &__ol li {
     color: black;
-    background-color: hsl(25, 100%, 50%);
+    background-color: hsl(25, 80%, 50%);
     margin: 10px;
   }
 
@@ -117,15 +117,11 @@
   height: 5em;
   background: repeating-linear-gradient(
     45deg,
-    red 0%,
-    black 35%,
-    blue 65%,
-    green 100%
+    hsl(0, 70%, 50%) 0%,
+    hsl(0, 0%, 0%) 35%,
+    hsl(240, 70%, 50%) 65%,
+    hsl(120, 70%, 25%) 100%
   );
-}
-
-.linear-gradient1:active {
-  transform: skewX(40deg);
 }
 
 .linear-gradient2 {
@@ -134,13 +130,9 @@
   height: 5em;
   background: repeating-linear-gradient(
     45deg,
-    red 0px,
+    rgb(184, 25, 25) 0px,
     black 40px,
     white 40px,
-    blue 80px
+    rgb(17, 17, 167) 80px
   );
-}
-
-.linear-gradient2:active {
-  transform: rotate(10deg);
 }
